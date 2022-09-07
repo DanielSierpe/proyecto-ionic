@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Options } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-perfil',
@@ -9,7 +10,9 @@ export class PerfilPage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  slideOpts(){}
 }
+
+
