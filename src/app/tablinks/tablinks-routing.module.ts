@@ -9,16 +9,20 @@ const routes: Routes = [
     component: TablinksPage,
     children: [
       {
-        path: 'perfil',
-        loadChildren: () => import('../perfil/perfil.module').then( m => m.PerfilPageModule)
-      },
-      {
         path: 'inicio',
         loadChildren: () => import('../inicio/inicio.module').then( m => m.InicioPageModule)
       },
       {
+        path: 'perfil',
+        loadChildren: () => import('../perfil/perfil.module').then( m => m.PerfilPageModule)
+      },
+      {
         path: 'config',
         loadChildren: () => import('../config/config.module').then( m => m.ConfigPageModule)
+      },
+      {
+        path: 'carrito',
+        loadChildren: () => import('../carrito/carrito.module').then( m => m.CarritoPageModule)
       },
       {
         path: "",
