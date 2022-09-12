@@ -34,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: "",
-    redirectTo: "tablinks/perfil",
+    redirectTo: "tablinks/inicio",
     pathMatch:"full"
 
   }
