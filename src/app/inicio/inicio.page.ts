@@ -12,4 +12,12 @@ export class InicioPage implements OnInit {
   ngOnInit() {
   }
 
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  option = {
+    slidesPerView:1.5,
+    centeredSlides:true,
+    loop: true,
+    //spaceBetween:10,
+    //autoplay:true,
+  };
 }

@@ -10,7 +10,9 @@ export class PerfilPage implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
   option = {

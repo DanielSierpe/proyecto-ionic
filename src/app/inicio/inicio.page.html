@@ -1,9 +1,48 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>inicio</ion-title>
+    <ion-title>Bienvenido</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-slides [options]="option" class="ion-margin-top">
+
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/img/blue4.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/img/blue1..jpg" >
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/img/blue2.jpg">
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+<!---Categorias-->
+
+  <div class="categories">
+
+  </div>
+
+
+  <ion-card>
+    <ion-grid>
+        <ion-row class="ion-text-center">
+            <ion-col size="4" routerLink="/page1">
+                <ion-icon name="home" color="dark" size="large"></ion-icon>
+                <p>Audifonos</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-card>
 
 </ion-content>
