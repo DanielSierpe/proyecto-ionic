@@ -8,11 +8,19 @@ import { Options } from 'selenium-webdriver';
 })
 export class PerfilPage implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
 
-  slideOpts(){}
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  option = {
+    slidesPerView:1.5,
+    centeredSlides:true,
+    loop: true,
+    //spaceBetween:10,
+    //autoplay:true,
+  };
+
 }
 
 
