@@ -18,9 +18,27 @@ export class InicioPage implements OnInit {
     this.categories=[
       {
         id:1,
-        label:'All',
-        image:'/assets/img/icon/audifonos-inalambricos',
+        label:'',
+        image:'/assets/icon/logo ilustacion.png',
         active: true,
+      },
+      {
+        id:1,
+        label:'',
+        image:'/assets/icon/audifonos-inalambricos.png',
+        active: false,
+      },
+      {
+        id:1,
+        label:'',
+        image:'/assets/icon/apple-watch.png',
+        active: false,
+      },
+      {
+        id:1,
+        label:'',
+        image:'/assets/icon/vocero.png',
+        active: false,
       },
     ];
   }

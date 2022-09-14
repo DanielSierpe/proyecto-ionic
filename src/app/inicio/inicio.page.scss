@@ -42,6 +42,33 @@ ion-card{
   }
 }
 
+}
+
+.categories{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  p{
+    padding-left: 20px;
+  }
+
+}
+
+.list-header{
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.fonos-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 
 .swiper-slide-active{
   transform:scale(1.05,1.05);
@@ -52,5 +79,3 @@ ion-card{
   transition: 400ms all ease-in-out;
 }
 
-
-}

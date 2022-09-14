@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { InicioPageRoutingModule } from './inicio-routing.module';
 
 import { InicioPage } from './inicio.page';
+import { SearchbarModule } from '../components/searchbar/searchbar.module';
+import { CategoryItemModule } from '../components/category-item/category-item.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule
+    InicioPageRoutingModule,
+    SearchbarModule,
+    CategoryItemModule,
   ],
   declarations: [InicioPage]
 })
