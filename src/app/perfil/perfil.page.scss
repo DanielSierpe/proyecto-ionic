@@ -1,26 +1,58 @@
+ion-content {
+  --background: url(/src/assets/img/renato-ramos-puma-Zs7IokljzTM-unsplash.jpg) no-repeat top center/cover fixed, #fff;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-ion-card{
-  //width: 100%;
-  //height: 160px;
-  //box-shadow: none;
-  border-radius: 12px;
+ion-toolbar {
+  --background: transparent;
+}
 
-  img{
-    object-fit: cover;
-    width: 100%;
-    transform: scale(1.1,1.1)rotate(1deg);
-    transition: 600ms all ease-in-out;
+.card {
+  margin: 0 auto;
+
+  .header {
+      height: 200px;
+
+      .avatar {
+          width: 160px;
+          height: 160px;
+          position: relative;
+          margin: 0 auto;
+
+          img {
+              display: block;
+              border-radius: 50%;
+              position: absolute;
+              bottom: calc(-1*(80px + 4px));
+              border: 4px solid #1280c9;
+              background-color: #fff;
+          }
+      }
   }
 }
+.card-body {
+  background-color: #e6e6e6;
+  padding: 30px;
+  height: calc(100vh - (200px + 56px));
+  overflow: hidden;
 
+  .user-meta {
+      padding-top: 40px;
 
-.swiper-slide-active{
-  transform:scale(1.05,1.05);
+      .playername {
+          font-size: 24px;
+          font-weight: 600;
+          color: #303940;
+      }
 
+      .country {
+          font-size: 90%;
+          color: #949ea6;
+          text-transform: uppercase;
+          margin: 0 auto;
+      }
+  }
 }
-
-.swiper-slide {
-  transition: 400ms all ease-in-out;
-}
-
 

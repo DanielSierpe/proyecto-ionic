@@ -1,9 +1,31 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Bienvenido</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content fullscreen="true" slot="fixed" >
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img src="/assets/icon/Asian Man.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="user-meta ion-text-center">
+      <h3 class="playername">User 1</h3>
+      <h5 class="country">Plata</h5>
+      <h6 class="ranking">Notificaciones: <ion-chip>
+        <ion-icon name="notifications"></ion-icon>
+        <ion-label>2</ion-label>
+        </ion-chip>
+      </h6>
+    </div>
+    <ion-button expand="full" color="primary">Editar perfil</ion-button>
+    <ion-button expand="full" color="secondary">Correo</ion-button>
+    <ion-button expand="full" color="secondary">Mis pedidos</ion-button>
+  </div>
+
 
 </ion-content>
