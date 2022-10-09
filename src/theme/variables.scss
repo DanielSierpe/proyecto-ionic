@@ -5,6 +5,7 @@
 :root {
   /** primary **/
   --ion-color-primary: #141414;
+  --ion-color-primary: #131313;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -13,6 +14,7 @@
 
   /** secondary **/
   --ion-color-secondary: #161616;
+  --ion-color-secondary: #131313;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -235,5 +237,3 @@
   }
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
