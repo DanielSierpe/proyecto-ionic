@@ -16,11 +16,16 @@ export class PerfilPage implements OnInit {
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
   option = {
-    slidesPerView:1.5,
-    centeredSlides:true,
-    loop: true,
-    //spaceBetween:10,
+    //slidesPerView:1.5,
+    //centeredSlides:true,
+    //loop: true,
+    spaceBetween:8,
     //autoplay:true,
+  };
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  cupo={
+    slidesPerView:2.5,
+    loop: true,
   };
 
 }

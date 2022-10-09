@@ -45,14 +45,12 @@ export class InicioPage implements OnInit {
 
 
 
-
-
   // eslint-disable-next-line @typescript-eslint/member-ordering
   option = {
     slidesPerView:1.5,
     centeredSlides:true,
     loop: true,
-    //spaceBetween:10,
+    spaceBetween: 5,
     //autoplay:true,
   };
 

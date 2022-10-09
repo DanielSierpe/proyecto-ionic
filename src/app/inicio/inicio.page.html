@@ -1,51 +1,26 @@
 <ion-header class="ion-no-border">
 </ion-header>
-
 <ion-content [fullscreen]="true">
 
+
+  <!---Header-->
   <div class="header">
-    <h1>Bienvenido</h1>
-    <div class="avatar">
-      <ion-img src="/assets/icon/Asian Man.png"></ion-img>
-    </div>
+    <h1><Table>Top ventas</Table></h1>
+
   </div>
 
+  <!---Slide-->
 
-  <ion-slides [options]="option" class="ion-margin-top">
+  <!---Buscador-->
+  <app-searchbar></app-searchbar>
 
-    <ion-slide>
-      <ion-card>
-        <img src="/assets/img/blue4.jpg">
-      </ion-card>
-    </ion-slide>
+   <!---Categorias-->
 
-    <ion-slide>
-      <ion-card>
-        <img src="/assets/img/blue1..jpg" >
-      </ion-card>
-    </ion-slide>
-
-    <ion-slide>
-      <ion-card>
-        <img src="/assets/img/blue2.jpg">
-      </ion-card>
-    </ion-slide>
-
-  </ion-slides>
-
-<!---Buscador-->
-  <app-searchbar>
-
-  </app-searchbar>
-
-
-  <!---Categorias-->
-  <div class="categories">
+   <h1>Categorias</h1>
+   <div class="categories">
     <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
   </div>
 
-
-  <!---Productos-->
-
+    <!---Productos-->
 
 </ion-content>

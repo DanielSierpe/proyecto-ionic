@@ -18,6 +18,7 @@ import { CategoryItemModule } from '../components/category-item/category-item.mo
     InicioPageRoutingModule,
     SearchbarModule,
     CategoryItemModule,
+    SearchbarModule
   ],
   declarations: [InicioPage]
 })

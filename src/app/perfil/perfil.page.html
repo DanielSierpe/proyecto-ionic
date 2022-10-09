@@ -2,8 +2,15 @@
   <ion-toolbar>
   </ion-toolbar>
 </ion-header>
+<ion-content fullscreen="true" >
 
-<ion-content fullscreen="true" slot="fixed" >
+
+  <div class="panel">
+    <ion-tab-button tab="inicio">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-tab-button>
+  </div>
+
   <div class="card">
     <div class="header">
       <div class="avatar">
@@ -22,10 +29,23 @@
         </ion-chip>
       </h6>
     </div>
-    <ion-button expand="full" color="primary">Editar perfil</ion-button>
-    <ion-button expand="full" color="secondary">Correo</ion-button>
-    <ion-button expand="full" color="secondary">Mis pedidos</ion-button>
-  </div>
 
+      <ion-button expand="block">Editar Nombre</ion-button>
+      <ion-button expand="block">Editar contraseña</ion-button>
+      <ion-button expand="block">Editar correo</ion-button>
 
-</ion-content>
+      <ion-slides [options]="option" class="ion-margin-top">
+        <ion-slide>
+          <ion-card>
+            <img src="/assets/icon/card1.png">
+          </ion-card>
+
+          <ion-card>
+            <img src="/assets/icon/card 2.png">
+          </ion-card>
+
+        </ion-slide>
+
+        </ion-slides>
+      </div>
+
