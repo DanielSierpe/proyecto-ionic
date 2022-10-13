@@ -5,21 +5,46 @@
 
   <!---Header-->
   <div class="header">
-    <h1><Table>Top ventas</Table></h1>
+    <h1><Table></Table></h1>
 
   </div>
 
   <!---Slide-->
 
-  <!---Buscador-->
-  <app-searchbar></app-searchbar>
+  <div class="slide">
 
+    <ion-slides [options]="option" class="ion-margin-top">
+
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/oferton1.png">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/oferton2.png">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/oferton3.png">
+        </ion-card>
+       </ion-slide>
+
+      </ion-slides>
+
+  </div>
    <!---Categorias-->
 
    <h1>Categorias</h1>
    <div class="categories">
     <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
   </div>
+
+  <!---Buscador-->
+  <app-searchbar></app-searchbar>
 
     <!---Productos-->
 

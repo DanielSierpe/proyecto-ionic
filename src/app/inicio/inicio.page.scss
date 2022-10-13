@@ -1,6 +1,7 @@
-ion-content{
-  --padding-start: 2rem;
-  --padding-end: 2rem;
+ion-content {
+  --background: #fafaff;
+}
+
   .header{
     display: flex;
     justify-content: space-between;
@@ -10,7 +11,7 @@ ion-content{
     h1{
       font-size: 2rem;
       font-weight: 600;
-      color: rgb(34, 34, 34);
+      color: rgb(29, 29, 29);
       margin: 24;
     }
     .avatar{
@@ -28,31 +29,11 @@ ion-content{
       }
     }
 }
-ion-card{
-  //width: 100%;
-  //height: 160px;
-  //box-shadow: none;
-  border-radius: 12px;
 
-  img{
-    object-fit: cover;
-    width: 100%;
-    transform: scale(1.1,1.1)rotate(1deg);
-    transition: 600ms all ease-in-out;
-  }
-}
-
-}
 //buscador
 app-searchbar{
   margin-top: 50px;
-  --padding-start: 2rem;
-  --padding-end: 2rem;
 }
-
-
-
-
 
 .categories{
   display: grid;
@@ -74,18 +55,31 @@ app-searchbar{
 }
 
 //SLIDE//
+
+.slide{
+  ion-card{
+    width: 100%;
+    //height: 160px;
+    box-shadow: none;
+    border-radius: 8px;
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      transform: scale(1.1, 1.1) rotate(1deg);
+      transition: 600ms all ease-in-out;
+    }
+}
+}
 .swiper-slide-active{
   transform:scale(1.05,1.05);
-  padding:none;
+
+  ion-card{
+    transform: scale(1,1);
+  }
 
 }
 
 .swiper-slide {
   transition: 400ms all ease-in-out;
-  padding:none;
-}
-
-.ion-slides{
-  padding:none;
-  background: black;
 }
