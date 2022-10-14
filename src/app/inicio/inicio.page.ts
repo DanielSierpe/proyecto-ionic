@@ -51,10 +51,36 @@ export class InicioPage implements OnInit {
     centeredSlides:true,
     loop: true,
     spaceBetween: 3,
+    autoplay:true,
+  };
+
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  in = {
+    slidesPerView:1.9,
+    //centeredSlides:true,
+    loop: true,
+    spaceBetween: 3,
+    //autoplay:true,
+  };
+
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  accesorios = {
+    slidesPerView:1.9,
+    //centeredSlides:true,
+    loop: true,
+    spaceBetween: 3,
     //autoplay:true,
   };
 
 
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  blutu = {
+    slidesPerView:1.9,
+    //centeredSlides:true,
+    loop: true,
+    spaceBetween: 3,
+    //autoplay:true,
+  };
 
 
 

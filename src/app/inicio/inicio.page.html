@@ -37,15 +37,102 @@
 
   </div>
    <!---Categorias-->
+<div class="categorias">
+  <h1>Categorias</h1>
+</div>
+   <!---Categorias-->
 
-   <h1>Categorias</h1>
-   <div class="categories">
-    <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
-  </div>
+   <div class="in">
+    <h2>In ears</h2>
+    <ion-slides [options]="in" class="ion-margin-top">
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue1..jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue2.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue4.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue7.jpg">
+        </ion-card>
+       </ion-slide>
+
+      </ion-slides>
+
+   </div>
+
+   <div class="accesorios">
+    <h2>Accesorios</h2>
+    <ion-slides [options]="accesorios" class="ion-margin-top">
+
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/accesorios1.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/accesorios2.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/accesorios3.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/accesorios4.jpg">
+        </ion-card>
+       </ion-slide>
+
+      </ion-slides>
+   </div>
+
+   <div class="blutu">
+    <h2>Bluetooth</h2>
+    <ion-slides [options]="blutu" class="ion-margin-top">
+
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue3.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue5.jpg">
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+        <ion-card>
+          <img src="/assets/img/blue6.jpg">
+        </ion-card>
+       </ion-slide>
+
+      </ion-slides>
+   </div>
+
 
   <!---Buscador-->
   <app-searchbar></app-searchbar>
 
-    <!---Productos-->
 
 </ion-content>
+
