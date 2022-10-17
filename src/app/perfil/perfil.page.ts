@@ -19,7 +19,7 @@ export class PerfilPage implements OnInit {
     //slidesPerView:1.5,
     //centeredSlides:true,
     //loop: true,
-    spaceBetween:8,
+    spaceBetween:5,
     //autoplay:true,
   };
   // eslint-disable-next-line @typescript-eslint/member-ordering
