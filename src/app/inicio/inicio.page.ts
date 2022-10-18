@@ -51,7 +51,7 @@ export class InicioPage implements OnInit {
     centeredSlides:true,
     loop: true,
     spaceBetween: 3,
-    //autoplay:true,
+    autoplay:true,
   };
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
