@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../models/category.model';
+import { NavController } from '@ionic/angular';
+import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 
 @Component({
   selector: 'app-inicio',
@@ -9,7 +11,7 @@ import { Category } from '../models/category.model';
 export class InicioPage implements OnInit {
   categories: Category []=[];
 
-  constructor() { }
+  constructor(public navCtrl: NavController, public camera: Camera) { }
 
   ngOnInit() {
     this.getCategory();

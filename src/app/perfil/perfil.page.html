@@ -23,6 +23,10 @@
     <div class="user-meta ion-text-center">
       <h3 class="playername">David</h3>
       <h5 class="country">Plata</h5>
+      <button ion-button black (click)="sacarCamara">Tomar Camara</button>
+      <button ion-button black (click)="tomarGaleria">Tomar Galeria</button>
+      <img [src]="" *ngIf="">
+
       <h6 class="ranking">Notificaciones: <ion-chip>
         <ion-icon name="notifications"></ion-icon>
         <ion-label>2</ion-label>
