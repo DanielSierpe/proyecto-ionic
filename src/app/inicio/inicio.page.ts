@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Category } from '../models/category.model';
 import { NavController } from '@ionic/angular';
 import { Camera } from '@awesome-cordova-plugins/camera/ngx';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-inicio',
@@ -10,12 +11,19 @@ import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 })
 export class InicioPage implements OnInit {
   categories: Category []=[];
+  characters = []
 
-  constructor(public navCtrl: NavController, public camera: Camera) { }
+  constructor( private http: HttpClient,public navCtrl: NavController, public camera: Camera) { }
 
   ngOnInit() {
-    this.getCategory();
+    this.http.get<any>('https://rickandmortyapi.com/api/character')
+      .subscribe(res =>{
+        console.log(res);
+        this.characters = res.results;
+      })
   }
+
+
   getCategory(){
     this.categories=[
       {
