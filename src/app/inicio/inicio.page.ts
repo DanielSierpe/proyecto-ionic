@@ -4,6 +4,7 @@ import { NavController } from '@ionic/angular';
 import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 import { HttpClient } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',

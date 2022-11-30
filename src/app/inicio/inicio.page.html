@@ -5,9 +5,9 @@
 
   <!---Header-->
   <div class="header">
-    <h1>David</h1>
+    <h1>Bienvenido Morty</h1>
     <div class="avatar">
-      <img src="/assets/icon/3d icon/download.jpg" alt="">
+      <img src="/assets/icon/3d icon/download.png" alt="">
     </div>
 
   </div>
@@ -43,7 +43,7 @@
    <!---Populares-->
 
    <div class="in">
-    <h2>Populares</h2>
+    <h2>Ultimas compras</h2>
     <ion-slides [options]="in" class="ion-margin-top">
       <ion-slide>
         <ion-card>
@@ -59,13 +59,13 @@
 
        <ion-slide>
         <ion-card>
-          <img src="/assets/img/blue4.jpg">
+          <img src="/assets/img/blue4.png">
         </ion-card>
        </ion-slide>
 
        <ion-slide>
         <ion-card>
-          <img src="/assets/img/blue7.jpg">
+          <img src="/assets/img/blue7.png">
         </ion-card>
        </ion-slide>
 
@@ -80,12 +80,17 @@
   <app-searchbar></app-searchbar>
   <!---listas-->
 
-  <ion-list>
-    <ion-item *ngFor="let character of characters">
-      <ion-label>{{character.name}}</ion-label>
-    </ion-item>
-  </ion-list>
-
+  <div class="lista">
+    <h6>Objetivos que matar</h6>
+    <ion-list>
+      <ion-item *ngFor="let character of characters" [routerLink]="['/profile/'+ character.id]" >
+        <ion-avatar slot="start">
+          <img src="{{character.image}}" alt="">
+        </ion-avatar>
+        <ion-label>{{character.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
 
 
 </ion-content>
