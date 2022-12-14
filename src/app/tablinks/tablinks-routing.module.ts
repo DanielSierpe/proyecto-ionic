@@ -25,6 +25,18 @@ const routes: Routes = [
         loadChildren: () => import('../carrito/carrito.module').then( m => m.CarritoPageModule)
       },
       {
+        path: 'noticias',
+        loadChildren: () => import('../noticias/noticias.module').then( m => m.NoticiasPageModule)
+      },
+      {
+        path: 'wubba',
+        loadChildren: () => import('../wubba-lubba-dub-dub/wubba-lubba-dub-dub.module').then( m => m.WubbaLubbaDubDubPageModule)
+      },
+      {
+        path: 'tienda',
+        loadChildren: () => import('../tienda/tienda.module').then( m => m.TiendaPageModule)
+      },
+      {
         path: "",
         redirectTo: "tablinks/perfil",
         pathMatch:"full"

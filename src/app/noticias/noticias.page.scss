@@ -1,0 +1,77 @@
+ion-content{
+    --background: url('/assets/img/fondo3.png') 0 0/100% 100% no-repeat;
+}
+
+.slide{
+    margin-top: 40px;
+    ion-card-header{
+        background-image: image();
+      }
+      ion-button{
+        margin-left: 80px;
+    }
+
+    ion-card{
+    background: hsla(0, 0%, 10%, 0.274);
+    backdrop-filter: blur(12px);
+    text-align: justify;
+    box-shadow: white;
+    }
+    ion-card-title{
+        color: white;
+    }
+    ion-card-subtitle{
+        color: rgb(226, 226, 226);
+    }
+    ion-button{
+        color: rgb(53, 184, 53);
+    }
+    h1{
+        color: white;
+        margin-left: 10px;
+        margin-top: 20 px;
+        font-size: 150%;
+        font-weight: bold;
+    }
+}
+
+.noticias{
+
+    ion-item{
+        
+        ion-title{
+            font-weight: 700;
+            font-size: 50%;
+            margin-top: 0;
+            display: flex;
+            flex-flow: column-reverse;
+        }
+    }
+
+    h1{
+        font-weight:bolder;
+        font-size: 120%;
+        margin-top: 8px;
+        color: white;
+    }
+    ion-list{
+        background-color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10;
+        p{
+            color: rgb(226, 226, 226);
+        }
+
+    }
+    ion-button{
+        color: rgb(53, 184, 53);
+    }
+}
+
+.logo{
+    margin-top: 60px;
+    img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -17,7 +17,19 @@ const routes: Routes = [
   {
     path: 'profile/:id',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },  {
+    path: 'noticias',
+    loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
   },
+  {
+    path: 'tienda',
+    loadChildren: () => import('./tienda/tienda.module').then( m => m.TiendaPageModule)
+  },
+  {
+    path: 'wubba-lubba-dub-dub',
+    loadChildren: () => import('./wubba-lubba-dub-dub/wubba-lubba-dub-dub.module').then( m => m.WubbaLubbaDubDubPageModule)
+  },
+
 
 
 ];

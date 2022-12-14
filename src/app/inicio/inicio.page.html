@@ -5,7 +5,7 @@
 
   <!---Header-->
   <div class="header">
-    <h1>Bienvenido Morty</h1>
+    <h1>Bienvenido</h1>
     <div class="avatar">
       <img src="/assets/icon/3d icon/download.png" alt="">
     </div>
@@ -20,13 +20,17 @@
 
       <ion-slide>
         <ion-card>
+          <ion-tab-button tab="noticias">
           <img src="/assets/img/oferton1.png">
+          </ion-tab-button>
         </ion-card>
        </ion-slide>
 
        <ion-slide>
         <ion-card>
-          <img src="/assets/img/oferton2.png">
+          <ion-tab-button tab="wubba">
+            <img src="/assets/img/oferton2.png">
+          </ion-tab-button>
         </ion-card>
        </ion-slide>
 
@@ -47,25 +51,25 @@
     <ion-slides [options]="in" class="ion-margin-top">
       <ion-slide>
         <ion-card>
-          <img src="/assets/img/headphone3.png">
+          <img src="/assets/img/pro1.jpg">
         </ion-card>
        </ion-slide>
 
        <ion-slide>
         <ion-card>
-          <img src="/assets/img/headphone2.png">
+          <img src="/assets/img/pro2.jpg">
         </ion-card>
        </ion-slide>
 
        <ion-slide>
         <ion-card>
-          <img src="/assets/img/blue4.png">
+          <img src="/assets/img/pro3.png">
         </ion-card>
        </ion-slide>
 
        <ion-slide>
         <ion-card>
-          <img src="/assets/img/blue7.png">
+          <img src="/assets/img/pro4.png">
         </ion-card>
        </ion-slide>
 
@@ -81,7 +85,7 @@
   <!---listas-->
 
   <div class="lista">
-    <h6>Objetivos que matar</h6>
+    <h6>Personajes</h6>
     <ion-list>
       <ion-item *ngFor="let character of characters" [routerLink]="['/profile/'+ character.id]" >
         <ion-avatar slot="start">
