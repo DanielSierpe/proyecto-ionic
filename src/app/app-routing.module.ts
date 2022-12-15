@@ -29,6 +29,10 @@ const routes: Routes = [
     path: 'wubba-lubba-dub-dub',
     loadChildren: () => import('./wubba-lubba-dub-dub/wubba-lubba-dub-dub.module').then( m => m.WubbaLubbaDubDubPageModule)
   },
+  {
+    path: 'editarperfil',
+    loadChildren: () => import('./editarperfil/editarperfil.module').then( m => m.EditarperfilPageModule)
+  },
 
 
 

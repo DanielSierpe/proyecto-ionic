@@ -36,6 +36,11 @@ const routes: Routes = [
         path: 'tienda',
         loadChildren: () => import('../tienda/tienda.module').then( m => m.TiendaPageModule)
       },
+
+      {
+        path: 'editar',
+        loadChildren: () => import('../editarperfil/editarperfil.module').then( m => m.EditarperfilPageModule)
+      },
       {
         path: "",
         redirectTo: "tablinks/perfil",
